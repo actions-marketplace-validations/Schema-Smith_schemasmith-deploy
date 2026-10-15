@@ -14,7 +14,7 @@ alike.
 ```yaml
 - name: WhatIf on PR
   if: github.event_name == 'pull_request'
-  uses: Schema-Smith/schemasmith-deploy@v2.7.2
+  uses: Schema-Smith/schemasmith-deploy@v2.7.3
   with:
     mode: whatif
     product-path: ./schema
@@ -24,7 +24,7 @@ alike.
 
 - name: Deploy on merge
   if: github.ref == 'refs/heads/main'
-  uses: Schema-Smith/schemasmith-deploy@v2.7.2
+  uses: Schema-Smith/schemasmith-deploy@v2.7.3
   with:
     mode: deploy
     product-path: ./schema
@@ -62,7 +62,7 @@ different SchemaSmith release on purpose.
 ```yaml
 - name: WhatIf
   id: whatif
-  uses: Schema-Smith/schemasmith-deploy@v2.7.2
+  uses: Schema-Smith/schemasmith-deploy@v2.7.3
   with:
     mode: whatif
     product-path: ./schema
